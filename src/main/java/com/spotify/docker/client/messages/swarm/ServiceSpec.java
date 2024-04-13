@@ -32,6 +32,7 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import java.util.List;
 import java.util.Map;
+import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 @AutoValue
@@ -42,7 +43,7 @@ public abstract class ServiceSpec {
   @JsonProperty("Name")
   public abstract String name();
 
-  @Nullable
+  @Nonnull
   @JsonProperty("Labels")
   public abstract ImmutableMap<String, String> labels();
 

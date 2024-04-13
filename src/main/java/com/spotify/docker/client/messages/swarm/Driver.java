@@ -30,6 +30,7 @@ import com.google.auto.value.AutoValue;
 
 import com.google.common.collect.ImmutableMap;
 import java.util.Map;
+import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 @AutoValue
@@ -40,7 +41,7 @@ public abstract class Driver {
   @JsonProperty("Name")
   public abstract String name();
 
-  @Nullable
+  @Nonnull
   @JsonProperty("Options")
   public abstract ImmutableMap<String, String> options();
 

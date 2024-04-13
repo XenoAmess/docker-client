@@ -32,6 +32,7 @@ import com.google.common.collect.ImmutableMap;
 import java.util.Date;
 import java.util.Map;
 
+import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 @AutoValue
@@ -78,7 +79,7 @@ public abstract class Service {
     /**
      * Filter by label.
      */
-    @Nullable
+    @Nonnull
     public abstract ImmutableMap<String, String> labels();
     
     public static Builder builder() {

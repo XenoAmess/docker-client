@@ -34,6 +34,7 @@ import com.spotify.docker.client.messages.mount.Mount;
 
 import java.util.List;
 import java.util.Map;
+import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 @AutoValue
@@ -50,7 +51,7 @@ public abstract class ContainerSpec {
   @JsonProperty("Hostname")
   public abstract String hostname();
 
-  @Nullable
+  @Nonnull
   @JsonProperty("Labels")
   public abstract ImmutableMap<String, String> labels();
 
