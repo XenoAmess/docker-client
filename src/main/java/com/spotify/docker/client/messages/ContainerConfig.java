@@ -38,6 +38,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 @AutoValue
@@ -108,7 +109,7 @@ public abstract class ContainerConfig {
     return volumes();
   }
 
-  @Nullable
+  @Nonnull
   @JsonProperty("Volumes")
   public abstract ImmutableSet<String> volumes();
 

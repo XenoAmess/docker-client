@@ -31,6 +31,7 @@ import com.google.auto.value.AutoValue;
 import com.google.common.collect.ImmutableMap;
 import java.util.Map;
 
+import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 @AutoValue
@@ -41,7 +42,7 @@ public abstract class VolumeOptions {
   @JsonProperty("NoCopy")
   public abstract Boolean noCopy();
 
-  @Nullable
+  @Nonnull
   @JsonProperty("Labels")
   public abstract ImmutableMap<String, String> labels();
 
