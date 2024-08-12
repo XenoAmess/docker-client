@@ -1483,6 +1483,7 @@ public class DefaultDockerClient implements DockerClient, Closeable {
     if (dockerfile != null) {
       resource = resource.queryParam("dockerfile", dockerfile);
     }
+    resource = resource.queryParam("version", "2");
 
     // Convert auth to X-Registry-Config format
     final RegistryConfigs registryConfigs = registryAuthSupplier.authForBuild();
